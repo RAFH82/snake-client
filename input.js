@@ -24,6 +24,21 @@ const setupInput = function (conn) {
       case "d":
         key = conn.write("Move: right");
         break;
+      case "1":
+        key = conn.write("Say: LOL");
+        break;
+      case "2":
+        key = conn.write("Say: Sss");
+        break;
+      case "3":
+        key = conn.write("Say: Eat");
+        break;
+      case "4":
+        key = conn.write("Say: Hi!");
+        break;
+      case "5":
+        key = conn.write("Say: Bye");
+        break;
     }
   };
   stdin.on("data", handleUserInput);
